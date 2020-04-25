@@ -3,6 +3,7 @@ package com.alexthekap.societe_generale.app.presentation_layer.Map;
 import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -10,7 +11,6 @@ import android.widget.Toast;
 import com.alexthekap.societe_generale.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -62,6 +62,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.setOnMapClickListener(latLng -> {
             mPresenter.onMapClick(latLng);
         });
+        Toast t = Toast.makeText(this, getString(R.string.click_on_me), Toast.LENGTH_LONG);
+        t.setGravity(Gravity.TOP, 0,100);
+        t.show();
     }
 
     @Override

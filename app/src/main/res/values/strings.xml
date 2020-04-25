@@ -2,5 +2,6 @@
     <string name="app_name">societe-generale</string>
     <string name="title_activity_maps">Map</string>
     <string name="go_to_maps_button">goMap</string>
-    <string name="show_time_toast">Местное время здесь:  %s</string>
+    <string name="show_time_toast">Local time:  %s</string>
+    <string name="click_on_me">Click on me</string>
 </resources>

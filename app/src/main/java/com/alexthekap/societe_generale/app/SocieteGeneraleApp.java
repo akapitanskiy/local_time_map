@@ -7,7 +7,7 @@ import com.alexthekap.societe_generale.app.di.Injector;
 import com.alexthekap.societe_generale.app.di.module.NetworkModule;
 
 /**
- * @author Alexey Kapitanskiy created on 20.04.2020
+ * created on 20.04.2020
  */
 
 public class SocieteGeneraleApp extends Application {

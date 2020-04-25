@@ -9,17 +9,15 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-import java.util.TimeZone;
 
 import javax.inject.Inject;
 
-import dagger.Provides;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 
 
 /**
- * @author Alexey Kapitanskiy created on 19.04.2020
+ * created on 19.04.2020
  */
 public class MapsPresenter extends BasePresenterImpl<MapContract.View> implements MapContract.Presenter {
 

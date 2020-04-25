@@ -3,7 +3,6 @@ package com.alexthekap.societe_generale.app.di.module;
 import com.alexthekap.societe_generale.app.network.api.AskGeoComApi;
 import com.google.gson.Gson;
 
-import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
 

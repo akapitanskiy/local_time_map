@@ -9,14 +9,11 @@ import javax.inject.Singleton;
 import dagger.Component;
 
 /**
- * @author Alexey Kapitanskiy created on 20.04.2020
+ * created on 20.04.2020
  */
-
 @Singleton
 @Component(modules = {NetworkModule.class, InteractorsModule.class})
 public interface ApplicationComponent {
-
-//    MapsPresenter getMapsPresenter();
 
     void inject(MapsPresenter.Factory factory);
 }
