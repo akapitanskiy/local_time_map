@@ -15,7 +15,6 @@ import javax.inject.Inject;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 
-
 /**
  * created on 19.04.2020
  */
@@ -30,7 +29,6 @@ public class MapsPresenter extends BasePresenterImpl<MapContract.View> implement
 
     @Override
     public void onMapClick(LatLng latLng) {
-//        getCompositeDisposable().add(askGeoComInteractor.getTime(latLng));
         getCompositeDisposable().add(askGeoComInteractor.getTime(latLng)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

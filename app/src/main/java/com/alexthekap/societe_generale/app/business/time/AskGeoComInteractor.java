@@ -7,7 +7,7 @@ import com.google.android.gms.maps.model.LatLng;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
-import io.reactivex.Flowable;
+import io.reactivex.Single;
 
 /**
  * created on 20.04.2020
@@ -22,7 +22,7 @@ public class AskGeoComInteractor {
         this.askGeoComApi = askGeoComApi;
     }
 
-    public Flowable<AskGeoComResponse> getTime(LatLng latLng) {
+    public Single<AskGeoComResponse> getTime(LatLng latLng) {
         return askGeoComApi.getPlayerInfoUsingGET("TimeZone", latLng.latitude + "," + latLng.longitude);
     }
 }

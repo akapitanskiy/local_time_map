@@ -24,7 +24,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private GoogleMap mMap;
     SupportMapFragment mapFragment;
-    MapsPresenter mPresenter;
+    private MapsPresenter mPresenter;
     private Unbinder unbinder;
 
     @BindView(R.id.progress_bar)
@@ -114,6 +114,4 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onDataNotAvailable() {
         Toast.makeText(this, "Ошибка сети", Toast.LENGTH_SHORT).show();
     }
-
-
 }

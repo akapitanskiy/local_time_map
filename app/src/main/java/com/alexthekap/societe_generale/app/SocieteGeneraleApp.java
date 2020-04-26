@@ -9,7 +9,6 @@ import com.alexthekap.societe_generale.app.di.module.NetworkModule;
 /**
  * created on 20.04.2020
  */
-
 public class SocieteGeneraleApp extends Application {
 
     @Override

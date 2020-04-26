@@ -1,6 +1,5 @@
 package com.alexthekap.societe_generale.app.presentation_layer;
 
-
 import io.reactivex.disposables.CompositeDisposable;
 
 /**
